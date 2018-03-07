@@ -17,7 +17,7 @@ The goal of this test is to make you code a new page on our website for the mark
 - **Mobile first** - the view must be responsive and usable on all devices (mobile & desktop)
 - **Fonts** - Don't spend time on that and use a google font
 - **translation** - You have to create a switch in order to switch the content from EN to FR (I18n may help you 😇)
-- **header and footer** - No need to code them but you can just create a simple jeader in order to put the language switch.
+- **header and footer** - No need to code them but you can just create a simple header in order to put the language switch.
 
 
 ## Design
