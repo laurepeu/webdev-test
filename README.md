@@ -40,9 +40,71 @@ In this repository you'll find a simple middleman skeleton. It's the structure f
 
 You're smart, right? So you shouldn't need any instruction :)
 
+Yes sure but i will add something below to make it work properly :)
+
+---
+### Prerequisites 
+
+- Git 
+- Homebrew for Mac OS X 
+- Apt for Debian or Ubuntu
+- NodeJs (stable version)
+
+### Ruby Installation
+
+First Install Ruby On Rails
+
+-  For OS X :Homebrew 
+```
+$ brew install ruby
+```
+
+- For Debian or Ubuntu : apt
+```
+$ sudo apt-get install ruby-full
+```
+- For Windows : 
+Go here [here](http://rubyinstaller.org/downloads/) and choose the version 2.3.X or higher and follow the steps trough the installation assistant (please make sur to add ruby as an executables to your Path)
+
+### Rails Installation
+
+```
+$ gem install rails
+```
+
+### Middleman Installation
+
+Then install Middleman:
+Locate where the `Gemfile` is to run the following command in the same directory:
+
+``` 
+$ gem install middleman
+```
+
+```
+$ bundle install
+```
+
+If you got error with **Windows** please run: 
+```
+$ bundle lock --add-platform x86-mswin32 x86-mingw32 java
+```
+
+### Run the Server
+
+Last step :) 
+You'll need to start the server to show the landing page. In order to make it work please run the following command :
+```
+$ middleman server
+```
+The landing page will be available [there](http://localhost:4567/)  :D
+
+---
 
 ## Submission
 
 Fork this repository and send us a pull request. We'll review it and get back to you in order to talk about your code!
 
 Contact us at manou@aircall.io if you need more details.
+
+ -->

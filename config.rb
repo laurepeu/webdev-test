@@ -1,9 +1,18 @@
+
+
+
 # Activate and configure extensions
+activate :i18n, :langs => [:en, :fr]
+
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
+
+set :relative_links, true
+
+activate :relative_assets
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -12,8 +21,6 @@ end
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-
-activate :i18n
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -33,11 +40,22 @@ activate :i18n
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  def svg(name)
+    root = Middleman::Application.root
+    file_path = "#{root}/source/images/#{name}.svg"
+    return File.read(file_path) if File.exists?(file_path)
+    '(not found)'
+  end
+
+  def video(name)
+    root = Middleman::Application.root
+    file_path = "#{root}/source/images/videos/#{name}.html.erb"
+    return File.read(file_path) if File.exists?(file_path)
+    '(not found)'
+  end 
+
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
@@ -46,3 +64,4 @@ activate :i18n
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
