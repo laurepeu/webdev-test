@@ -1,6 +1,14 @@
+:root{
+  --aircall-green: rgba(79, 194, 49, 1);
+  --background-color: #f9f9f9;
+  --typo-color: black;
+  --first-video: #E9FDFF;
+  --second-video: #F7FDFF;
+}
+
 body {
-  background-color:rgb(255, 255, 255);
-  color: black;
+  background-color:var(--background-color);
+  color: var(--typo-color);
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
@@ -19,14 +27,11 @@ h2{
   font-weight: 500;
   line-height: 50px;
   margin-top: 20px;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
   text-align:center;
 }
 
 h3{
   font-size: 50px;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 60;
   line-height: 43px;
   text-align: center;
@@ -35,7 +40,6 @@ h3{
 
 p{
   margin-top:20px;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 28px;
   font-size:20px;
@@ -44,10 +48,9 @@ p{
 
 // Call To Action Try Aircall
 .btn {
-  background-color: rgba(79, 194, 49, 1);
+  background-color: var(--aircall-green);
   font-weight: 700;
   margin:auto;
-  font-family: Mark, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   padding: 20px;
   font-size: 16px;
@@ -55,17 +58,13 @@ p{
   border: none;
   cursor: pointer;
   border-radius:3px;
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   
 }
 
 .btn:hover, .btn:focus {
-  background-color: #3e8e41;
+  background-color: var(--aircall-green);
 }
 
 
@@ -79,18 +78,10 @@ p{
 
 // All the wrap of the page
 .wrap{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
+	flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
   margin-top:20px;
   margin-bottom:50px;
   text-align: center;
@@ -99,13 +90,9 @@ p{
 // When the page is divided in two column
 .column {
   margin: 10px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
   text-align: center;
 }
 
@@ -114,48 +101,31 @@ p{
 // table  
 .td{
   display: block;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  flex-flow: column nowrap;
+  justify-content: center;
   padding: 20px;
   margin:10px;
   width:350px;
   flex-shrink: 1;
   border-radius: 8px !important;
   border-color:grey;
-  -webkit-box-shadow: rgba(13, 19, 111, 0.15) 0px 12px 20px 0px !important;
-          box-shadow: rgba(13, 19, 111, 0.15) 0px 12px 20px 0px !important;
+  box-shadow: rgba(13, 19, 111, 0.15) 0px 12px 20px 0px !important;
 }
 
 
 
 // Image of the table
 .picto{
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 // Title of the table
 .table_head{
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-size:1.5em;
   margin:6px;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 50px;
 }
@@ -163,7 +133,6 @@ p{
 // Description of the table 
 .table_content{
   margin-top:20px;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 28px;
   font-size:18px;
@@ -171,16 +140,12 @@ p{
 
 // liste des brands
 .items {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .items .item {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 20px;
   margin:auto;
   width:auto;
@@ -189,151 +154,35 @@ p{
 
 // first video
 .wrapsg{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
+	flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
   margin-top:20px;
-  background-color:#E9FDFF;
+  background-color:var(--first-video);
   height:auto;
 }
 
 //second video
 .wrapam{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
+	flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
   margin-top:20px;
-  background-color:#F7FDFF;
+  background-color:var(--second-video);
   height:auto;
 }
 
 // column of the video 
 .left{
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  align-items: left;
   margin:auto;
   width: 400px;
 }
 
 .right{
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+  align-items: right;
   margin:auto;
   width: 400px;
 }
-
-// Logo NavBar
-.header_logo{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-pack:start;
-      -ms-flex-pack:start;
-          justify-content:flex-start;
-}  
-
-.wrapheader{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
-  margin-top:20px;
-  margin-bottom:20px;
-}
-
-// header static page 
-.headerleft{
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  margin:20px;
-  width: auto;
-}
-
-.headerright{
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin:20px;
-  width: auto;
-}
-
-// Button Language NavBar
-.dropdown{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-size:14px;
-}
-
-
-.dropbtn {
-  padding: 16px;
-  font-size: 16px;
-  border-color:rgba(79, 194, 49, 1);
-  cursor: pointer;
-  font-family: Mark, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  background-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-width: 1px;
-}
-.button{
-  border-style: solid;
-  border-width: 1px;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: rgba(79, 194, 49, 1);
-}
-  
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 50px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.show {display:block;}
