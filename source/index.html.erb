@@ -1,100 +1,103 @@
-<main>
+<%# Header with the logo, the switch language button and the trial button %>
+<section class="header">
+  <div class="wrap">
+    <div class="left">
+      <h1> <%= t('header.title') %> </h1>
+        <h2> <%= t('header.subtitle')%> </h2>
+          <button class="trial-btn"> <%= t('header.trial_button')%> </button>
+    </div>
+    <div class="right">
+      <%= svg'illustrations/ecommerce_illu' %>
+    <div>
+  </div>
+</section>
 
-  <section class="header">
-    <div class="wrap">
+<%# Section with the 3 explanations of the service %>
+<section class="service-explanation">
+  <div class="wrap">
+    <div class="explanation">
+      <div class="picto">
+        <%= svg'logos/setup' %> 
+      </div> 
+      <div class="explanation-title">
+        <%= t('explanation.explanation_title1')%>
+      </div>
+      <div class="explanation-content">
+        <%= t('explanation.explanation_content1')%>
+      </div>  
+    </div> 
+    <div class="explanation">    
+      <div class="picto">
+        <%= svg'logos/conversation' %>
+      </div>
+      <div class="explanation-title">
+        <%= t('explanation.explanation_title2')%> 
+      </div>    
+      <div class="explanation-content">
+        <%= t('explanation.explanation_content2')%> 
+      </div> 
+    </div>
+    <div class="explanation">
+      <div class="explanation-picto">
+        <%= svg'logos/analytics' %>
+      </div>
+      <div class="explanation-title">
+        <%= t('explanation.explanation_title3')%>
+      </div> 
+      <div class="explanation-content">
+        <%= t('explanation.explanation_content3')%> 
+      </div>
+    </div>
+  </div> 
+</section>
+
+<%# Section with all the logo of the customers%>
+<section class="customers">
+  <div class="wrap">
+    <div class="items">
+      <div class="item">
+        <%= svg 'companies/adoreme' %>
+      </div>
+      <div class="item">
+        <%= svg 'companies/birchbox'%>
+      </div>
+      <div class="item">
+        <%= svg 'companies/capsule'%>
+      </div>
+      <div class="item">
+        <%= svg 'companies/marine_layer' %>
+      </div>
+      <div class="item">
+        <%= svg 'companies/seatgeek'%>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# Section with the testimonies of two customers %>
+<section class="testimonies"> 
+  <h3><%= t('testimonies.testimonies')%></h3> 
+    <div class="first-video">
       <div class="left">
-        <h1> <%= t('title') %> </h1>
-          <h2> <%= t('subtitle')%> </h2>
-            <button class="btn"> <%= t('cta')%> </button>
+        <h3> SeatGeek</h3>
+          <p><%= t('testimonies.seatgeek')%> 
+          <br> <%= t('testimonies.author_seatgeek')%></p>
       </div>
       <div class="right">
-        <%= svg'illustrations/ecommerce_illu' %>
-      <div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="items">
-        <div class="td">
-          <div class="picto">
-            <%= svg'logos/setup' %> 
-          </div> 
-          <div class="table_head">
-            <%= t('table_head1')%>
-          </div>
-          <div class="table_content">
-            <%= t('table_content1')%>
-          </div>  
-        </div> 
-        <div class="td">    
-          <div class="picto">
-            <%= svg'logos/conversation' %>
-          </div>
-          <div class="table_head">
-            <%= t('table_head2')%> 
-          </div>    
-          <div class="table_content">
-            <%= t('table_content2')%> 
-          </div> 
-        </div>
-        <div class="td">
-          <div class="picto">
-            <%= svg'logos/analytics' %>
-            </div>
-          <div class="table_head">
-            <%= t('table_head3')%>
-          </div> 
-          <div class="table_content">
-            <%= t('table_content3')%> 
-          </div>
-        </div>
+        <%= video 'videoseat' %>
       </div> 
     </div> 
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="items">
-        <div class="item"><%= svg 'companies/adoreme' %>
-        </div>
-        <div class="item"><%= svg 'companies/birchbox'%>
-        </div>
-        <div class="item"><%= svg 'companies/capsule'%>
-        </div>
-        <div class="item"><%= svg 'companies/marine_layer' %>
-        </div>
-        <div class="item"><%= svg 'companies/seatgeek'%>
-        </div>
+    <div class="second-video">  
+      <div class="left">
+        <%= video 'videoadore' %>
+      </div>
+      <div class="right">
+        <h3> AdoreMe</h3>
+        <p> <%= t('testimonies.adoreme')%>
+        <br> <%= t('testimonies.author_adoreme')%></p> 
       </div>
     </div>
-  </section>
-
-  <section>
-    <h3><%= t('testimonies')%></h3> 
-      <div class="wrapsg">
-        <div class="left">
-          <h3> SeatGeek</h3>
-            <p><%= t('seatgeek')%> 
-            <br> <strong> <%= t('author_seatgeek')%> </strong> </p>
-        </div>
-        <div class="right">
-          <%= video 'videoseat' %>
-        </div> 
-      </div> 
-      <div class="wrapam">  
-        <div class="left">
-           <%= video 'videoadore' %>
-        </div>
-        <div class="right">
-          <h3> AdoreMe</h3>
-            <p><%= t('adoreme')%>
-            <br> <strong> <%= t('author_adoreme')%> </strong></p> 
-        </div>
-      </div>
-      <div class="wrap"> 
-        <button class="btn"> <%= t('cta')%> </button>
-      </div>
-  </section>
-
-</main>
+    <div class="wrap"> 
+      <button class="trial-btn"> <%= t('header.trial_button')%> </button>
+    </div>
+</section>

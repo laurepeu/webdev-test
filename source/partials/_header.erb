@@ -1,12 +1,11 @@
-<div class=wrapheader>
-  <div class="column">
+<%# Header : logo and language button %>
+
+<div class=container>
     <div class="header_logo">
       <%= svg 'logos/aircall-logotype' %>
     </div>
-  </div>
-  <div class="column">
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn"><%= t('languages') %></button>
+      <button onclick="myFunction()" class="dropbtn"><%= t('header.languages') %></button>
         <div id="myDropdown" class="dropdown-content">
           <% link_to '/' do %>
             <%= svg 'logos/uk' %>
@@ -16,7 +15,6 @@
           <% end %>
         </div>
     </div>
-  </div>
 </div>
 
 

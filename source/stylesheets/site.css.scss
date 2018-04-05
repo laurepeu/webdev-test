@@ -1,3 +1,4 @@
+// Colors used
 :root{
   --aircall-green: rgba(79, 194, 49, 1);
   --background-color: #f9f9f9;
@@ -16,6 +17,7 @@ body {
   padding: 5vh 1rem;
 }
 
+
 h1{
   font-size: 40px;
   font-weight: 300;
@@ -27,53 +29,61 @@ h2{
   font-weight: 500;
   line-height: 50px;
   margin-top: 20px;
-  text-align:center;
+  text-align: center;
 }
 
 h3{
   font-size: 50px;
   font-weight: 60;
   line-height: 43px;
-  text-align: center;
   margin-bottom: 50px;
+  text-align: center; 
 }
 
 p{
-  margin-top:20px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  font-size:20px;
-  text-align:center;
+  margin-top: 20px;
+  text-align: center;
 }
-
-// Call To Action Try Aircall
-.btn {
-  background-color: var(--aircall-green);
-  font-weight: 700;
-  margin:auto;
-  color: white;
-  padding: 20px;
-  font-size: 16px;
-  margin-bottom:100px;
-  border: none;
-  cursor: pointer;
-  border-radius:3px;
-  display:flex;
-  justify-content: center;
-  
-}
-
-.btn:hover, .btn:focus {
-  background-color: var(--aircall-green);
-}
-
 
 // First section of the page
 .header{
-  // background-color:#F3FDFF;
   background-image: url("/images/shapes/backgroundheader.svg");
-  background-position:top;
+  background-position: top;
   background-repeat: no-repeat;
+}
+
+// Separation of the page
+.left{
+  align-items: left;
+  margin: auto;
+  width: 400px;
+}
+
+.right{
+  align-items: right;
+  margin: auto;
+  width: 400px;
+}
+
+// Call To Action Try Aircall
+.trial-btn {
+  background-color: var(--aircall-green);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;  
+}
+
+.trial-btn:hover, .trial-btn:focus {
+  background-color: var(--aircall-green);
 }
 
 // All the wrap of the page
@@ -82,63 +92,41 @@ p{
 	flex-direction: row;
   flex-wrap: wrap; 
   justify-content: center;
-  margin-top:20px;
-  margin-bottom:50px;
+  margin-top: 20px 0 50px 0;
   text-align: center;
 }
 
-// When the page is divided in two column
-.column {
-  margin: 10px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  text-align: center;
-}
-
-
-
-// table  
-.td{
-  display: block;
-  flex-flow: column nowrap;
+// Service explanation
+.explanation{
+  display: flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
   justify-content: center;
+  width: 350px;
   padding: 20px;
-  margin:10px;
-  width:350px;
+  margin: 10px;
   flex-shrink: 1;
   border-radius: 8px !important;
   border-color:grey;
   box-shadow: rgba(13, 19, 111, 0.15) 0px 12px 20px 0px !important;
 }
 
-
-
-// Image of the table
-.picto{
-  display:flex;
-  justify-content: center;
-}
-
-// Title of the table
-.table_head{
-  display:flex;
-  justify-content: center;
-  font-size:1.5em;
-  margin:6px;
+// Main title Explanation
+.explanation-title{
+  font-size: 1.5em;
+  margin: 6px;
   font-weight: 500;
   line-height: 50px;
 }
 
-// Description of the table 
-.table_content{
-  margin-top:20px;
+// Description of the service
+.explanation-content{
   font-weight: 400;
   line-height: 28px;
-  font-size:18px;
+  font-size: 18px;
 }
 
-// liste des brands
+// List of the brands
 .items {
 	display: flex;
   flex-wrap: wrap;
@@ -147,42 +135,30 @@ p{
 .items .item {
   box-sizing: border-box;
   padding: 20px;
-  margin:auto;
-  width:auto;
+  margin: auto;
+  width: auto;
 }
-// videos 
 
-// first video
-.wrapsg{
+// First video
+.first-video{
   display: flex;
 	flex-direction: row;
   flex-wrap: wrap; 
   justify-content: center;
-  margin-top:20px;
-  background-color:var(--first-video);
-  height:auto;
+  margin-top: 20px;
+  background-color: var(--first-video);
+  height: auto;
 }
 
-//second video
-.wrapam{
+// Second video
+.second-video{
   display: flex;
 	flex-direction: row;
   flex-wrap: wrap; 
   justify-content: center;
-  margin-top:20px;
-  background-color:var(--second-video);
-  height:auto;
+  margin-top: 20px;
+  background-color: var(--second-video);
+  height: auto;
 }
 
-// column of the video 
-.left{
-  align-items: left;
-  margin:auto;
-  width: 400px;
-}
 
-.right{
-  align-items: right;
-  margin:auto;
-  width: 400px;
-}

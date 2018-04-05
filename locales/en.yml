@@ -1,17 +1,20 @@
 en:
-  title: "The Phone System for Effortless eCommerce"
-  subtitle: "Turn curious shoppers into lifelong customers with a five-star service experience"
-  cta: "Try Aircall for free"
-  table_head1: "Simple Setup"
-  table_content1: "Add a number, create a team, and get to work. You can build the phone system you need now without waiting on the IT department"
-  table_head2: "Complete Conversations"
-  table_content2: "Integrate your phone system with CRMs, helpdesks, and any other tool that contains the context you need to deliver personalized service."
-  table_head3: "Advanced Analytics"
-  table_content3: "Dig deeper into employee productivity and customer satisfaction rates to make sure your operations always measure up to expectations."
-  testimonies: "What our Customers are saying about us"
-  seatgeek: ' "Aircall allows us to provide a seamless interaction with our customers." '
-  author_seatgeek: "Joe Gilgoff, Directeur Relation client."
-  adoreme: ' " Aircall’s ability to integrate with new ecosystems has made our life easy. " '
-  author_adoreme: "Nicolas Capuono, VP Customer Relationships"
-  cta: "Try Aircall for free"
-  languages: "Language"
+  header:
+    languages: "Language"
+    title: "The Phone System for Effortless eCommerce"
+    subtitle: "Turn curious shoppers into lifelong customers with a five-star service experience"
+    trial_button: "Try Aircall for free"
+  explanation:
+    explanation_title1: "Simple Setup"
+    explanation_content1: "Add a number, create a team, and get to work. You can build the phone system you need now without waiting on the IT department"
+    explanation_title2: "Complete Conversations"
+    explanation_content2: "Integrate your phone system with CRMs, helpdesks, and any other tool that contains the context you need to deliver personalized service."
+    explanation_title3: "Advanced Analytics"
+    explanation_content3: "Dig deeper into employee productivity and customer satisfaction rates to make sure your operations always measure up to expectations."
+  testimonies:
+    testimonies: "What our Customers are saying about us"
+    seatgeek: ' "Aircall allows us to provide a seamless interaction with our customers." '
+    author_seatgeek: "Joe Gilgoff, Directeur Relation client."
+    adoreme: ' " Aircall’s ability to integrate with new ecosystems has made our life easy. " '
+    author_adoreme: "Nicolas Capuono, VP Customer Relationships"
+  

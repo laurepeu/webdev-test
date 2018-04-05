@@ -1,104 +1,60 @@
-// colors 
-
+// colors of the page
 :root{
     --aircall-green: rgba(79, 194, 49, 1);
     --background-color: #f9f9f9;
+    --typo-color: black;
 }
 
-
-// Logo NavBar
-.header_logo{
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-pack:start;
-        -ms-flex-pack:start;
-            justify-content:flex-start;
-  }  
-  
-  .wrapheader{
-    display: -webkit-box;
-    display: -ms-flexbox;
+.container{
     display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; 
-    -webkit-box-pack: center; 
-        -ms-flex-pack: center; 
-            justify-content: center;
-    margin-top:20px;
-    margin-bottom:20px;
-  }
-  
-  // header static page 
-  .headerleft{
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
-    margin:20px;
-    width: auto;
-  }
-  
-  .headerright{
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin:20px;
-    width: auto;
-  }
-  
-  // Button Language NavBar
-  .dropdown{
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    font-size:14px;
-  }
-  
-  
-  .dropbtn {
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 10px 0 10px;  
+}
+
+// button language
+.dropbtn {
     padding: 16px;
-    font-size: 16px;
+    font-size: 14px;
     border-color:var(--aircall-green);
     cursor: pointer;
-    font-family: Mark, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     background-color: var(--background-color);
     border-style: solid;
     border-width: 1px;
-  }
-  .button{
+}
+
+.button{
     border-style: solid;
     border-width: 1px;
-  }
+}
   
-  .dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus {
     background-color: var(--aircall-green);
-  }
-    
-  .dropdown-content {
+}
+
+// Inside the button
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: var(--background-color);
     width: 50px;
-    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
   
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+.dropdown-content a {
     display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: var(--background-color)}
-  
-  .show {display:block;}
+    padding: 12px 16px;
+    text-decoration: none;  
+}
+ 
+// Hover of the button content 
+.dropdown-content a:hover {
+      background-color: var(--background-color)
+}
+    
+.show {
+      display:block;
+}
   
